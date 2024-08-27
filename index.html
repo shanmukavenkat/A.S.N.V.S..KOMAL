@@ -147,7 +147,7 @@
         <nav class="hidden md:flex">
             <a href="#about" class="px-4 py-2 transition-transform transform hover:scale-105 text-[#B026FF]">About</a>
             <a href="#skills" class="px-4 py-2 transition-transform transform hover:scale-105 text-[#B026FF]">Skills</a>
-            <a href="#education" class="px-4 py-2 transition-transform transform hover:scale-105 text-[#B026FF]">Education</a>
+            <a href="#CERTIFICATIONS" class="px-4 py-2 transition-transform transform hover:scale-105 text-[#B026FF]">Certifications</a>
             <a href="#projects" class="px-4 py-2 transition-transform transform hover:scale-105 text-[#B026FF]">Projects</a>
             <a href="#contact" class="px-4 py-2 transition-transform transform hover:scale-105 text-[#B026FF]">Contact</a>
         </nav>
@@ -162,15 +162,18 @@
     <div id="menu" class="hidden md:hidden">
         <a href="#about" class="block px-4 py-2 text-[#B026FF]">About</a>
         <a href="#skills" class="block px-4 py-2 text-[#B026FF]">Skills</a>
-        <a href="#education" class="block px-4 py-2 text-[#B026FF]">Education</a>
+        <a href="#CERTIFICATIONS" class="block px-4 py-2 text-[#B026FF]">CERTIFICATIONS</a>
         <a href="#projects" class="block px-4 py-2 text-[#B026FF]">Projects</a>
         <a href="#contact" class="block px-4 py-2 text-[#B026FF]">Contact</a>
     </div>
 </header>
 
 <!-- About Me Section -->
-<section id="about" class="container mx-auto px-6 py-20 fade-in flex flex-col md:flex-row items-center text-center md:text-left">
-    <div class="md:w-1/2">
+<!-- About Me Section -->
+<!-- About Me Section -->
+<section id="about" class="container mx-auto px-6 py-20 fade-in flex flex-col md:flex-row items-center text-center md:text-left bg-black relative overflow-hidden">
+    <!-- Content -->
+    <div class="relative z-10 md:w-1/2">
         <h2 class="text-4xl font-extrabold mb-8 text-[#B026FF]">About Me</h2>
         <p class="text-lg leading-relaxed text-[#B026FF]">
             👋 Hello! I’m A.S.N.V.S.KOMAL, a full-stack developer who blends creativity with technology. From crafting dynamic websites 🌐 to diving deep into the realms of DevOps 🚀 and data science 📊, I’m passionate about exploring innovative solutions and making the web both beautiful and functional. Let’s create something amazing together! ✨
@@ -187,10 +190,11 @@
             </a>
         </div>
     </div>
-    <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+    <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center relative z-10">
         <img src="new.jpg" alt="Profile Image" class="circular-img">
     </div>
 </section>
+
 
 <!-- Skills Section -->
 <section id="skills" class="bg-gradient-to-r from-purple-700 to-indigo-900 py-20 fade-in scroll-left">
@@ -221,21 +225,84 @@
     </div>
 </section>
 
-<!-- Education Section -->
-<section id="education" class="py-20 fade-in scroll-right">
-    <div class="container mx-auto px-6  ml-0 mr-0 pl-0 pr-0">
-        <h2 class="text-4xl font-extrabold mb-8 text-[#B026FF] ml-3">Education</h2>
-        <div class="scrolling-container ml-0 mr-0">
-            <div class="scrolling-inner">
-                <div class="scrolling-item">need to be up dated</div>
-                <div class="scrolling-item">need to be up dated</div>
-                <div class="scrolling-item">need to be up dated</div>
-                <div class="scrolling-item">need to be up dated</div>
-                <div class="scrolling-item">need to be up dated</div>
+<!-- CERTIFICATIONS Section -->
+<!-- Certifications Section -->
+<section id="CERTIFICATIONS" class="py-20 fade-in">
+    <div class="container mx-auto px-6 ">
+        <h2 class="text-4xl font-extrabold mb-8 text-[#B026FF]">CERTIFICATIONS</h2>
+        <div class="flex space-x-6 overflow-x-auto scrolling-touch py-6 custom-scrollbar">
+            <!-- Certification Card 1 -->
+            <div class="relative flex-shrink-0 w-64 bg-[#1a1a1a] text-[#B026FF] p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105">
+                <div class="absolute inset-0 rounded-lg border-4 border-transparent pointer-events-none transition-all duration-300 ease-in-out"></div>
+                <img src="your-image-url-1.jpg" alt="Certification Image 1" class="w-full h-32 object-cover rounded-md mb-4 z-10 relative">
+                <h3 class="text-xl font-semibold mb-2 z-10 relative">Certification Title 1</h3>
+                <p class="text-sm z-10 relative">Issuer: Institution Name</p>
+                <p class="text-sm mt-2 z-10 relative">Date: MM/YYYY</p>
+                <!-- Gradient Border on Hover -->
+                <div class="absolute inset-0 rounded-lg border-4 border-transparent hover:border-gradient-to-r hover:from-purple-500 hover:to-pink-500"></div>
             </div>
+            <!-- Certification Card 2 -->
+            <div class="relative flex-shrink-0 w-64 bg-[#1a1a1a] text-[#B026FF] p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105">
+                <div class="absolute inset-0 rounded-lg border-4 border-transparent pointer-events-none transition-all duration-300 ease-in-out"></div>
+                <img src="your-image-url-2.jpg" alt="Certification Image 2" class="w-full h-32 object-cover rounded-md mb-4 z-10 relative">
+                <h3 class="text-xl font-semibold mb-2 z-10 relative">Certification Title 2</h3>
+                <p class="text-sm z-10 relative">Issuer: Institution Name</p>
+                <p class="text-sm mt-2 z-10 relative">Date: MM/YYYY</p>
+                <!-- Gradient Border on Hover -->
+                <div class="absolute inset-0 rounded-lg border-4 border-transparent hover:border-gradient-to-r hover:from-green-500 hover:to-blue-500"></div>
+            </div>
+            <!-- Certification Card 3 -->
+            <div class="relative flex-shrink-0 w-64 bg-[#1a1a1a] text-[#B026FF] p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105">
+                <div class="absolute inset-0 rounded-lg border-4 border-transparent pointer-events-none transition-all duration-300 ease-in-out"></div>
+                <img src="your-image-url-3.jpg" alt="Certification Image 3" class="w-full h-32 object-cover rounded-md mb-4 z-10 relative">
+                <h3 class="text-xl font-semibold mb-2 z-10 relative">Certification Title 3</h3>
+                <p class="text-sm z-10 relative">Issuer: Institution Name</p>
+                <p class="text-sm mt-2 z-10 relative">Date: MM/YYYY</p>
+                <!-- Gradient Border on Hover -->
+                <div class="absolute inset-0 rounded-lg border-4 border-transparent hover:border-gradient-to-r hover:from-green-500 hover:to-blue-500"></div>
+            </div>
+            <!-- Add more certification cards as needed -->
         </div>
     </div>
 </section>
+
+
+
+<!-- Custom Scrollbar CSS -->
+<style>
+    /* Custom Scrollbar */
+    .custom-scrollbar::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent; /* Background color of the track */
+        border-radius: 10px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #B026FF; /* Color of the scrollbar thumb */
+        border-radius: 10px;
+        border: 2px solid #1a1a1a; /* Adds a border to create a space between the thumb and the track */
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(142, 1, 227, 0.97); /* Color on hover */
+    }
+
+    /* Gradient Border Effect on Hover */
+    .relative:hover .absolute {
+        border-width: 4px;
+        border-style: solid;
+        box-shadow:inset 2px 2px rgba(59, 94, 255, 0.96); /* Adds space around the gradient border */
+        z-index: 1;
+    }
+
+
+</style>
+
+
+
 
 <!-- Projects Section -->
 <section id="projects" class="bg-gradient-to-r from-purple-700 to-indigo-900 py-20 fade-in scroll-left">
