@@ -48,10 +48,20 @@
             transition: transform 0.3s;
 
         }
+        .scrolling-inner-1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+            transition: transform 0.3s;
+            scroll-behavior: smooth;
+
+        }
 
         .scrolling-item {
             flex: 0 0 auto;
-            background: #1a1a1a;
+            background: transparent;
             color: #B026FF;
             padding: 1.5rem;
             border-radius: 0.5rem;
@@ -65,7 +75,7 @@
         }
 
         .scroll-left .scrolling-inner {
-            animation: scroll-left 20s linear infinite;
+            animation: scroll-left 30s linear infinite;
         }
 
         @keyframes scroll-left {
@@ -138,6 +148,15 @@
             color: white;
         }
         /* Custom text outline */
+        .container-1{
+            background-image: url("backon.avif");
+            background-size: cover;
+        }
+        .container-2{
+            background-image: url("head-b.avif");
+            background-size: cover;
+        }
+
 
     </style>
 </head>
@@ -176,9 +195,9 @@
 <!-- About Me Section -->
 <!-- About Me Section -->
 <!-- About Me Section -->
-<section id="about" class="container mx-auto px-6 py-20 fade-in flex flex-col md:flex-row items-center text-center md:text-left bg-black relative overflow-hidden">
+<section id="about" class="container container-2  mx-auto px-6 py-20 fade-in flex flex-col md:flex-row items-center text-center md:text-left bg-black relative overflow-hidden">
     <!-- Content -->
-    <div class="relative z-10 md:w-1/2">
+    <div class="relative z-10 md:w-1/2 ">
         <h2 class="text-4xl font-extrabold mb-8 text-[#B026FF]">About Me</h2>
         <p class="text-lg leading-relaxed text-[#B026FF]">
             👋 Hello! I’m A.S.N.V.S.KOMAL, a full-stack developer who blends creativity with technology. From crafting dynamic websites 🌐 to diving deep into the realms of DevOps 🚀 and data science 📊, I’m passionate about exploring innovative solutions and making the web both beautiful and functional. Let’s create something amazing together! ✨
@@ -202,39 +221,40 @@
 
 
 <!-- Skills Section -->
-<section id="skills" class="bg-gradient-to-r from-purple-700 to-indigo-900 py-20 fade-in scroll-left    flex justify-center " >
-    <div class="container mx-auto px-6 ml-0 mr-0 pl-0 pr-0">
+<section id="skills" class=" py-20 fade-in scroll-left  flex justify-center container-1 " >
+    <div class="container  mx-auto px-6 ml-0 mr-0 pl-0 pr-0   ">
         <h2 class="text-4xl font-extrabold mb-8 text-[#B026FF] ml-3">Skills</h2>
         <div class="scrolling-container ml-0 mr-0">
-            <div class="scrolling-inner">
-                <div class="scrolling-item">HTML</div>
-                <div class="scrolling-item">CSS</div>
-                <div class="scrolling-item">Tailwind CSS</div>
-                <div class="scrolling-item">JavaScript</div>
-                <div class="scrolling-item">React</div>
-                <div class="scrolling-item">Node.js</div>
-                <div class="scrolling-item">Python</div>
-                <div class="scrolling-item">SQL</div>
-                <div class="scrolling-item">MongoDB</div>
-                <div class="scrolling-item">HTML</div>
-                <div class="scrolling-item">CSS</div>
-                <div class="scrolling-item">Tailwind CSS</div>
-                <div class="scrolling-item">JavaScript</div>
-                <div class="scrolling-item">React</div>
-                <div class="scrolling-item">Node.js</div>
-                <div class="scrolling-item">Python</div>
-                <div class="scrolling-item">SQL</div>
-                <div class="scrolling-item">MongoDB</div>
+            <div class="scrolling-inner ">
+                <img src="html-icon.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="css-icon.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="javascript.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="react-js.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="tailwind-css.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="mongodb.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="sql.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="node.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="python.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="bootstrap-5-logo-icon.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="github.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="power-bi-icon.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="figma-icon.svg" class="scrolling-item bg-transparent" width="80px" height="80px" alt="reload"/>
+                <img src="adobe-xd-icon.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="adobe-photoshop-icon.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+
             </div>
+
+
+
         </div>
     </div>
 </section>
 
 <!-- CERTIFICATIONS Section -->
 <!-- Certifications Section -->
-<section id="CERTIFICATIONS" class="py-20 fade-in relative">
-    <div class="absolute inset-0 flex flex-col justify-center items-center z-0 pointer-events-none">
-        <marquee class="text-2xl font-extrabold text-purple-200 opacity-80 "><img src="certi.svg" width="150px" height="200px" /></marquee>
+<section id="CERTIFICATIONS" class="py-20 fade-in relative ">
+    <div class="absolute inset-0 flex flex-col justify-center items-center z-0 pointer-events-none mt-4">
+        <marquee class="text-2xl font-extrabold text-purple-200 opacity-80 "><img src="certi.svg" width="250px" height="300px" alt="reload" /></marquee>
     </div>
 
     <div class="container mx-auto px-6 z-10 relative">
@@ -450,25 +470,201 @@
 
 
 <!-- Projects Section -->
-<section id="projects" class="bg-gradient-to-r from-purple-700 to-indigo-900 py-20 fade-in scroll-left  flex justify-center">
+<section id="projects" class="bg-gradient-to-r from-purple-700 to-indigo-900 py-20 fade-in scroll-left">
     <div class="container mx-auto px-6 ml-0 mr-0 pl-0 pr-0">
         <h2 class="text-4xl font-extrabold mb-8 text-[#B026FF]  ml-3">Projects</h2>
-        <div class="scrolling-container ml-0 mr-0">
-            <div class="scrolling-inner">
-                <div class="scrolling-item card">Updates will be coming soon......</div>
-                <div class="scrolling-item">Updates will be coming soon.....</div>
-                <div class="scrolling-item">Updates will be coming soon.....</div>
-                <div class="scrolling-item">Updates will be coming soon.....</div>
-                <div class="scrolling-item">Updates will be coming soon.....</div>
-                <div class="scrolling-item">Updates will be coming soon.....</div>
-                <div class="scrolling-item">Updates will be coming soon....</div>
-                <div class="scrolling-item">Updates will be coming soon.....</div>
-                <div class="scrolling-item">Updates will be coming soon.....</div>
-                <div class="scrolling-item">Updates will be coming soon.....</div>
+
+            <div class="scrolling-inner-1 ml-4">
+            <!--card-->
+                <div class="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+                    <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+                        <img src="your-image-url.jpg" alt="Card Image" class="h-full w-full object-cover rounded-xl">
+                    </div>
+                    <div class="p-6">
+                        <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                            Tailwind card
+                        </h5>
+                        <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button data-ripple-light="true" type="button" class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+                    <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+                        <img src="your-image-url.jpg" alt="Card Image" class="h-full w-full object-cover rounded-xl">
+                    </div>
+                    <div class="p-6">
+                        <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                            Tailwind card
+                        </h5>
+                        <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button data-ripple-light="true" type="button" class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+                    <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+                        <img src="your-image-url.jpg" alt="Card Image" class="h-full w-full object-cover rounded-xl">
+                    </div>
+                    <div class="p-6">
+                        <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                            Tailwind card
+                        </h5>
+                        <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button data-ripple-light="true" type="button" class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+                    <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+                        <img src="your-image-url.jpg" alt="Card Image" class="h-full w-full object-cover rounded-xl">
+                    </div>
+                    <div class="p-6">
+                        <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                            Tailwind card
+                        </h5>
+                        <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button data-ripple-light="true" type="button" class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+                    <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+                        <img src="your-image-url.jpg" alt="Card Image" class="h-full w-full object-cover rounded-xl">
+                    </div>
+                    <div class="p-6">
+                        <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                            Tailwind card
+                        </h5>
+                        <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button data-ripple-light="true" type="button" class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+                    <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+                        <img src="your-image-url.jpg" alt="Card Image" class="h-full w-full object-cover rounded-xl">
+                    </div>
+                    <div class="p-6">
+                        <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                            Tailwind card
+                        </h5>
+                        <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button data-ripple-light="true" type="button" class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+                    <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+                        <img src="your-image-url.jpg" alt="Card Image" class="h-full w-full object-cover rounded-xl">
+                    </div>
+                    <div class="p-6">
+                        <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                            Tailwind card
+                        </h5>
+                        <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button data-ripple-light="true" type="button" class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+                    <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+                        <img src="your-image-url.jpg" alt="Card Image" class="h-full w-full object-cover rounded-xl">
+                    </div>
+                    <div class="p-6">
+                        <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                            Tailwind card
+                        </h5>
+                        <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button data-ripple-light="true" type="button" class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+                <!--card-->
+                <div class="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+                    <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+                        <img src="your-image-url.jpg" alt="Card Image" class="h-full w-full object-cover rounded-xl">
+                    </div>
+                    <div class="p-6">
+                        <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                            Tailwind card
+                        </h5>
+                        <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button data-ripple-light="true" type="button" class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+
+
+
+
+
             </div>
         </div>
-    </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Contact Section -->
 <!-- Contact Section -->
