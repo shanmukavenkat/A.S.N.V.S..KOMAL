@@ -45,7 +45,7 @@
         .scrolling-inner {
             display: flex;
             gap: 1rem;
-            transition: transform 0.3s;
+            transition: transform 0.2s;
 
         }
         .scrolling-inner-1{
@@ -66,7 +66,7 @@
             padding: 1.5rem;
             border-radius: 0.5rem;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, background-color 0.3s;
+            transition: transform 0.1s, background-color 0.3s;
             overflow: hidden;
         }
 
@@ -75,12 +75,13 @@
         }
 
         .scroll-left .scrolling-inner {
-            animation: scroll-left 30s linear infinite;
+            animation: scroll-left 28s linear infinite;
+            animation-delay: 0s;
         }
 
         @keyframes scroll-left {
             0% {
-                transform: translateX(100%);
+                transform: translateX(0);
             }
             100% {
                 transform: translateX(-100%);
@@ -226,6 +227,22 @@
         <h2 class="text-4xl font-extrabold mb-8 text-[#B026FF] ml-3">Skills</h2>
         <div class="scrolling-container ml-0 mr-0">
             <div class="scrolling-inner ">
+                <img src="html-icon.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="css-icon.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="javascript.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="react-js.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="tailwind-css.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="mongodb.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="sql.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="node.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="python.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="bootstrap-5-logo-icon.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="github.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="power-bi-icon.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="figma-icon.svg" class="scrolling-item bg-transparent" width="80px" height="80px" alt="reload"/>
+                <img src="adobe-xd-icon.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+                <img src="adobe-photoshop-icon.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
+
                 <img src="html-icon.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
                 <img src="css-icon.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
                 <img src="javascript.svg" class="scrolling-item bg-transparent" width="100px" height="100px" alt="reload"/>
