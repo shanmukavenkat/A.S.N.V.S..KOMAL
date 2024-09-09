@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SNVS Creative Tech Hub Innovating, Collaborating, Connecting</title>
-    <link rel="icon" type="image/x-icon" href="LOGO.svg">
+    <link rel="icon" type="image/x-icon" href="logo.png">
 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -271,7 +271,9 @@
 <!-- Certifications Section -->
 <section id="CERTIFICATIONS" class="py-20 fade-in relative ">
     <div class="absolute inset-0 flex flex-col justify-center items-center z-0 pointer-events-none mt-4">
-        <marquee class="text-2xl font-extrabold text-purple-200 opacity-80 "><img src="certi.svg" width="250px" height="300px" alt="reload" /></marquee>
+        <marquee class="text-2xl font-extrabold text-purple-200 opacity-80 "><img src="certi.svg" width="250px" height="300px" alt="reload" />
+        </marquee>
+
     </div>
 
     <div class="container mx-auto px-6 z-10 relative">
@@ -367,6 +369,7 @@
             </div>
             <!-- Add more certification cards as needed -->
         </div>
+
     </div>
     <!-- Full-Screen Website Preview -->
     <div id="website-preview-overlay" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex justify-center items-center">
@@ -444,7 +447,7 @@
 
     // Add hover event listeners to each certification card
     certificationCards.forEach((card, index) => {
-        card.addEventListener('mouseenter', () => {
+        card.addEventListener('click', () => {
             let url;
             if (index === 0) {
                 url = 'https://certificates.ccbp.in/academy/programming-foundations-with-python?id=TSUZBQICHI';
