@@ -1,4 +1,3 @@
-Got it! Here's the customized **GitHub README.md** file content written **from your perspective**:
 
 ---
 
