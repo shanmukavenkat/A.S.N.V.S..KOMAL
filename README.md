@@ -69,9 +69,7 @@ I am **Amudalapalli S N V S Komal**, a full-stack developer driven by a passion 
 
 ---
 
-### 📝 License  
-
-Feel free to connect with me for collaborations and exciting opportunities. Let’s build something amazing together!  
-
+### 💬 Let’s Connect!
+Feel free to reach out to me for collaborations, opportunities, or just to chat about tech!
 ---
 
