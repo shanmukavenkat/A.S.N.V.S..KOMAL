@@ -1,4 +1,12 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the professional portfolio of Amudalapalli S N V S Komal, a visionary full-stack developer with expertise in web development and generative AI technologies.">
+    <title>Amudalapalli S N V S Komal - Portfolio</title>
+</head>
+<body>
     <header>
         <h1>Welcome to the Portfolio of <a href="https://shanmukavenkat.github.io/A.S.N.V.S..KOMAL/" target="_blank">Amudalapalli S N V S Komal</a></h1>
         <p>Discover a world of creativity, technical mastery, and impactful solutions in web development and generative AI.</p>
@@ -65,3 +73,5 @@
     <footer>
         <p>&copy; 2024 Amudalapalli S N V S Komal. All Rights Reserved.</p>
     </footer>
+</body>
+</html>
