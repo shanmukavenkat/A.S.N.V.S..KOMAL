@@ -16,7 +16,7 @@ This portfolio reflects my dedication to web development and my exploration of *
 
 ---
 
-##🔑 Key Features of My Portfolio
+### 🔑 Key Features of My Portfolio
 
 ### 📌 About Me  
 A brief overview of who I am as a developer, my skills, and my philosophy of balancing creativity and technical excellence.  
