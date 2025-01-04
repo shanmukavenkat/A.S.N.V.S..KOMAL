@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>45° Scrolling Text</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen overflow-hidden">
+<section class="relative w-full h-64 overflow-hidden">
+    <!-- Wrapper for scrolling content -->
+    <div class="absolute top-1/2 left-0 transform -translate-y-1/2 -rotate-45 animate-scroll whitespace-nowrap">
+        <!-- Repeated scrolling text -->
+        <span class="text-4xl font-bold text-blue-600 mx-8">
+        🚀 Tailwind CSS is Awesome!
+      </span>
+        <span class="text-4xl font-bold text-green-600 mx-8">
+        🌟 Create Beautiful Designs!
+      </span>
+        <span class="text-4xl font-bold text-purple-600 mx-8">
+        ✨ Customizable & Fast!
+      </span>
+        <span class="text-4xl font-bold text-red-600 mx-8">
+        🛠️ Build Stunning Websites!
+      </span>
+        <!-- Duplicate the content for smooth scrolling -->
+        <span class="text-4xl font-bold text-blue-600 mx-8">
+        🚀 Tailwind CSS is Awesome!
+      </span>
+        <span class="text-4xl font-bold text-green-600 mx-8">
+        🌟 Create Beautiful Designs!
+      </span>
+        <span class="text-4xl font-bold text-purple-600 mx-8">
+        ✨ Customizable & Fast!
+      </span>
+        <span class="text-4xl font-bold text-red-600 mx-8">
+        🛠️ Build Stunning Websites!
+      </span>
+    </div>
+</section>
+</body>
+</html>
+
+<style>
+    /* Custom Animation */
+    @keyframes scroll {
+        0% {
+            transform: translateX(100%) rotate(-150deg);
+        }
+        100% {
+            transform: translateX(-100%) rotate(-240deg);
+        }
+    }
+
+    .animate-scroll {
+        animation: scroll 15s linear infinite;
+    }
+</style>

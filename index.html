@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#A020F0" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+
+
     <title>SNVS Creative Tech Hub Innovating, Collaborating, Connecting</title>
     <link rel="icon" type="image/x-icon" href="Logo.png">
 
@@ -150,6 +154,7 @@
         }
         /* Custom text outline */
         .container-1{
+
             background-image: url("backon.avif");
             background-size: cover;
         }
@@ -166,10 +171,10 @@
 <body class="bg-black text-white">
 
 <!-- Header Section -->
-<header class="bg-gradient-to-r from-purple-700 to-indigo-900 text-white shadow-lg">
+<header class="bg-gradient-to-r from-purple-700 to-indigo-900 text-white shadow-lg  ">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
         <h1 class="text-4xl font-bold transition-transform transform hover:scale-105 text-[#B026FF]">S.N.V.S.KOMAL</h1>
-        <nav class="hidden md:flex">
+        <nav class="hidden md:flex ">
             <a href="#about" class="px-4 py-2 transition-transform transform hover:scale-105 text-[#B026FF]">About</a>
             <a href="#skills" class="px-4 py-2 transition-transform transform hover:scale-105 text-[#B026FF]">Skills</a>
             <a href="#CERTIFICATIONS" class="px-4 py-2 transition-transform transform hover:scale-105 text-[#B026FF]">Certifications</a>
@@ -184,7 +189,7 @@
             </svg>
         </button>
     </div>
-    <div id="menu" class="hidden md:hidden">
+    <div id="menu" class="hidden md:hidden ">
         <a href="#about" class="block px-4 py-2 text-[#B026FF]">About</a>
         <a href="#skills" class="block px-4 py-2 text-[#B026FF]">Skills</a>
         <a href="#CERTIFICATIONS" class="block px-4 py-2 text-[#B026FF]">CERTIFICATIONS</a>
@@ -283,7 +288,7 @@
         <h2 class="text-4xl font-extrabold mb-8 text-[#B026FF] relative z-20">CERTIFICATIONS</h2>
         <div class="flex space-x-6 overflow-x-auto scrolling-touch py-6 custom-scrollbar bg-transparent relative">
             <!-- Certification Card 1 -->
-            <div class="relative flex-shrink-0 w-64 bg-[#1a1a1a] text-[#B026FF] p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 certification-card">
+            <div class="relative flex-shrink-0 w-64 bg-[#1a1a1a] text-[#B026FF] p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105 certification-card   ">
                 <div class="absolute inset-0 rounded-lg border-4 border-transparent pointer-events-none transition-all duration-300 ease-in-out"></div>
                 <h3 class="text-xl font-semibold mb-2 z-10 relative">Programming Foundations</h3>
                 <p class="text-sm z-10 relative">Issuer: NxtWave</p>
@@ -454,6 +459,7 @@
         border-bottom-left-radius: 50px;
         transition:  0.3s ease-in; /* Smooth transition */
     }
+
 </style>
 
 <!-- JavaScript to Handle Hover and Preview Display -->
@@ -549,6 +555,31 @@
         <h2 class="text-4xl font-extrabold mb-8 text-[#B026FF]  ml-3 pb-3">Projects</h2>
 
             <div class="scrolling-inner-1 ml-4">
+                <!-- main project -->
+                <div class="relative flex w-80 flex-col rounded-xl bg-lime-500 card-colors text-gray-700 shadow-md mt-8">
+                    <div class="relative -mx-0 -mt-8 h-40 overflow-hidden bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 class-one">
+                        <img src="projects/Github_FileUploader.png" alt="Card Image" class="h-full w-full object-cover ">
+                    </div>
+                    <div class="p-6">
+                        <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                           GitHub File Uploader
+                        </h5>
+                        <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                            A user-friendly website that allows secure file uploads directly to private GitHub repositories, eliminating the need for command-line tools. Fully mobile-friendly, it simplifies file management for everyone, even on the go.
+
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <button data-ripple-light="true" href="https://snvs-pro.netlify.app/" type="button" class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                            <a href="https://snvs-pro.netlify.app/"> Click It </a>
+                        </button>
+                    </div>
+                </div>
+
+
+
+
+
             <!--card-1-->
                 <div class="relative flex w-80 flex-col rounded-xl bg-lime-500 card-colors text-gray-700 shadow-md mt-8">
                     <div class="relative -mx-0 -mt-8 h-40 overflow-hidden bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 class-one">
